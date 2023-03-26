@@ -1,0 +1,228 @@
+@import 'variables';
+
+.about {
+
+    &-header {
+        margin-top: 70px;
+        text-align: center;
+        position: relative;
+
+        h1 {
+            font-size: 54px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 900;
+            z-index: 2;
+            position: relative;
+
+            span {
+                color: $color-purple;
+            }
+        }
+
+        .title-bg {
+            position: absolute;
+            font-size: 110px;
+            top: -50%;
+            left: 50%;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            transform: translate(-50%);
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.07);
+        }
+    }
+
+    &-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    &-personal {
+        margin: 100px auto 0 auto;
+        display: flex;
+        gap: 140px;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.062);
+    }
+
+    .personal-info {
+        margin-top: 100px;
+
+        h4 {
+            text-transform: uppercase;
+            font-size: 28px;
+            letter-spacing: 1.2px;
+        }
+
+        &-block {
+            margin-top: 30px;
+            display: flex;
+            gap: 45px;
+        }
+
+        .info-text {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            p {
+                letter-spacing: 0.3px;
+                color: $color-secondary;
+
+                span {
+                    color: white;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        .watch-cv {
+            display: inline-block;
+            margin-top: 60px;
+            color: white;
+            letter-spacing: -1px;
+            font-size: 18px;
+            border: 2px solid $color-purple;
+            padding: 10px 60px;
+            border-radius: 30px;
+
+            &:hover {
+                background-color: $color-purple;
+                transition: background-color 500ms linear;
+            }
+        }
+
+    }
+
+    .personal-specialized {
+        flex-wrap: wrap;
+        max-width: 850px;
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+    }
+
+    .specialized-item {
+        background-color: rgba(255, 255, 255, 0.055);
+        max-width: 320px;
+        text-align: center;
+        color: white;
+        padding: 25px 50px;
+
+        h5 {
+            font-size: 16px;
+            letter-spacing: 1.2px;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        .icon-item {
+            color: $color-purple;
+        }
+    }
+
+    .education {
+        padding-bottom: 20px;
+        margin-top: 60px;
+
+        h2 {
+            font-size: 45px;
+            text-align: center;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+
+            span {
+                color: $color-purple
+            }
+        }
+
+        &-container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-left-bar {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 480px;
+
+            h5 {
+                font-size: 20px;
+                letter-spacing: 1.2px;
+            }
+
+            .learning-descr {
+                margin-top: 10px;
+                letter-spacing: 0.5px;
+                font-size: 14px;
+                line-height: 29px;
+                color: $color-secondary;
+            }
+
+            .learning-years {
+                margin-top: 8px;
+            }
+        }
+
+        &-right-bar {
+            min-width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .second {
+            display: flex;
+            gap: 150px;
+        }
+
+        .third {
+            display: flex;
+            gap: 300px;
+        }
+
+        .edu-icon {
+            font-size: 62px;
+        }
+
+        .html {
+            color: rgb(233, 53, 53);
+        }
+
+        .css {
+            color: rgb(61, 119, 243);
+        }
+
+        .sass {
+            color: rgb(248, 155, 171);
+        }
+
+        .react {
+            color: rgb(122, 217, 255);
+        }
+
+        .js {
+            color: rgb(255, 255, 0);
+        }
+
+        .trap {
+            color: rgb(118, 51, 249);
+        }
+
+        .mui {
+            color: rgb(56, 56, 248);
+        }
+
+        .redux {
+            color: rgb(132, 98, 201)
+        }
+    }
+}
