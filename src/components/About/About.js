@@ -1,16 +1,17 @@
 import Education from "./Education";
 import Specialized from "./Specialized";
 import { motion } from "framer-motion";
+import Recommendations from "./Recommendations";
 
 const About = () => {
 
     return (
-        <main className="about">
-            <div className="about-header">
+        <main className="about-page">
+            <div className="about-page-header">
                 <h1>about <span>me</span></h1>
                 <span className="title-bg">Resume</span>
             </div>
-            <div className="about-container">
+            <div className="about-page-container">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -21,7 +22,7 @@ const About = () => {
                         }
                     }}
                 >
-                    <section className="about-personal">
+                    <section className="about-page-personal">
                         <div className="personal-info">
                             <h4>personal infos</h4>
                             <div className="personal-info-block">
@@ -44,6 +45,7 @@ const About = () => {
                     </section>
                 </motion.div>
                 <Education />
+                <Recommendations />
             </div>
         </main>
     )

@@ -1,9 +1,11 @@
 @import 'variables';
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
-.about {
+.about-page {
 
     &-header {
-        margin-top: 70px;
+        margin-top: 50px;
         text-align: center;
         position: relative;
 
@@ -40,7 +42,7 @@
     }
 
     &-personal {
-        margin: 100px auto 0 auto;
+        margin: 80px auto 0 auto;
         display: flex;
         gap: 140px;
         justify-content: space-between;
@@ -107,7 +109,7 @@
 
     .specialized-item {
         background-color: rgba(255, 255, 255, 0.055);
-        max-width: 320px;
+        max-width: 370px;
         text-align: center;
         color: white;
         padding: 25px 50px;
@@ -129,6 +131,7 @@
     .education {
         padding-bottom: 20px;
         margin-top: 60px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.062);
 
         h2 {
             font-size: 45px;
@@ -225,4 +228,94 @@
             color: rgb(132, 98, 201)
         }
     }
+
+    .recommend {
+        padding-bottom: 60px;
+
+        h2 {
+            text-align: center;
+            font-size: 50px;
+            margin-top: 50px;
+        }
+
+        .slick-slider {
+            margin-top: 44px;
+        }
+
+        .slick-list {
+            text-align: center;
+        }
+
+        .slick-dots {
+            bottom: -45px;
+
+            li {
+                height: 30px;
+                width: 44px;
+            }
+
+            button {
+                &::before {
+                    width: 30px;
+                    height: 30px;
+                    content: "";
+                    background-color: $color-purple;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        &-card {
+            padding: 10px 20px;
+            background-color: $color-gray;
+            display: flex;
+            flex-direction: column;
+            max-width: 650px;
+            height: 300px;
+        }
+
+        &-head {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+
+            &-img {
+                img {
+                    border-radius: 50%;
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+
+            &-text {
+                width: 250px;
+                text-align: left;
+
+                h4 {
+                    color: $color-purple;
+                    font-size: 20px;
+                }
+
+                p {
+                    color: $color-secondary;
+                    margin-top: 12px;
+                    font-size: 16px;
+                    letter-spacing: 0.3px;
+                }
+            }
+        }
+
+        &-comment {
+            font-family: $font-secondary;
+            text-align: left;
+            margin-top: 20px;
+            letter-spacing: 1.5px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+
+
+
 }

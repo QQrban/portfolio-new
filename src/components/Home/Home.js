@@ -28,6 +28,7 @@ const Home = () => {
     return (
         <main className="home-page">
             <motion.div
+                className='home-motion'
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
@@ -40,8 +41,8 @@ const Home = () => {
                 <div className="home-page-bg"></div>
                 <div className="home-page-photo"></div>
                 <div className="home-page-content">
-                    <h1>my name is <span>kurban ramazanov.</span></h1>
-                    <p>Creative Junior Front-End developer. Passionate about learning new JavaScript and React technologies. Passionate about UI/UX. Looking to gain more experience and improve my skills in web development.</p>
+                    <h1>my name is <span>kurban ramazanov</span></h1>
+                    <p>Creative Junior Front-End developer. Passionate about learning new JavaScript and React technologies. I am excited about the prospect of contributing to projects and solving complex problems with the guidance and support of senior developers.</p>
                     <div className="home-page-social">
                         {socialLinkz.map((link, i) => (
                             <a
