@@ -18,6 +18,32 @@
 
 }
 
+@media (max-width: 1200px) {
+    .portfolio-page {
+        img {
+            height: 100% !important;
+        }
+
+        .MuiPaper-root {
+            width: 420px !important;
+            height: 313px !important;
+            margin: 0 auto;
+        }
+    }
+
+    .contact-content {
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-info {
+        flex-direction: row;
+        gap: 36px;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 991px) {
     .header {
         left: 0;
@@ -113,8 +139,27 @@
             height: 300px !important;
         }
     }
+
+    .portfolio-page {
+        padding-bottom: 120px;
+    }
 }
 
+@media (max-width: 680px) {
+    .contact-content {
+        justify-content: center;
+    }
+
+    .MuiBox-root {
+        width: 500px !important;
+    }
+
+    .contact-info {
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
 
 @media (max-width: 571px) {
 
@@ -188,9 +233,34 @@
             line-height: 25px !important;
         }
     }
+
+    .portfolio-page {
+
+
+        .MuiPaper-root {
+            max-width: 320px !important;
+            height: 250px !important;
+            margin: 0 auto;
+        }
+    }
+
+    .MuiBox-root {
+        width: 350px !important;
+    }
 }
 
 @media (max-width: 435px) {
+
+    .portfolio-page-header {
+        h1 {
+            font-size: 40px !important;
+        }
+
+        .title-bg {
+            top: -30% !important;
+        }
+    }
+
     .recommend {
         h2 {
             font-size: 35px !important;
@@ -239,6 +309,16 @@
         p {
             font-size: 14px;
             line-height: 28px;
+        }
+    }
+
+    .MuiBox-root {
+        width: 300px !important;
+    }
+
+    .contact-text {
+        a {
+            font-size: 14px !important;
         }
     }
 }

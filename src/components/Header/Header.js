@@ -26,26 +26,31 @@ const Header = () => {
             icon: GrMail,
             h3: 'contact',
             to: '/contact',
-        }
+        },
     ];
 
     return (
-        <header className='header'>
+        <header className="header">
             <nav>
-                {linkz.map(link => (
+                {linkz.map((link) => (
                     <NavLink
-                        onMouseOver={() => { document.querySelector(`.${link.h3}`).classList.remove('hidden') }}
-                        onMouseLeave={() => { document.querySelector(`.${link.h3}`).classList.add('hidden') }}
+                        onMouseOver={() => {
+                            document.querySelector(`.${link.h3}`).classList.remove('hidden');
+                        }}
+                        onMouseLeave={() => {
+                            document.querySelector(`.${link.h3}`).classList.add('hidden');
+                        }}
                         className="header-link"
                         key={link.h3}
-                        to={link.to}>
+                        to={link.to}
+                    >
                         <h3 className={`${link.h3} hidden`}>{link.h3}</h3>
-                        <link.icon className='header-icon' />
+                        <link.icon className="header-icon" />
                     </NavLink>
                 ))}
             </nav>
         </header>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;

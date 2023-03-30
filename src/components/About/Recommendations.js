@@ -1,10 +1,14 @@
-import Slider from "react-slick";
-import maksim from "../../img/photos/maksim.jpg"
-import rasim from "../../img/photos/rasim.jpg"
-import oleg from "../../img/photos/oleg.png"
-import roman from "../../img/photos/roman.png"
+import { useRef } from 'react';
+import Slider from 'react-slick';
+import { useInView } from 'framer-motion';
+import maksim from '../../img/photos/maksim.jpg';
+import rasim from '../../img/photos/rasim.jpg';
+import oleg from '../../img/photos/oleg.png';
+import roman from '../../img/photos/roman.png';
 
 const Recommendations = () => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
 
     const settings = {
         dots: true,
@@ -14,6 +18,7 @@ const Recommendations = () => {
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
+        autoplaySpeed: 5000,
     };
 
     const recz = [
@@ -41,11 +46,18 @@ const Recommendations = () => {
             comment: `"He consistently demonstrates a strong work ethic, attention to detail, and a passion for developing innovative and engaging user experiences. His positive attitude and dedication to excellence are truly inspiring and make him an asset to any organization."`,
             photo: rasim,
         },
-
-    ]
+    ];
 
     return (
-        <section className="recommend">
+        <section
+            className="recommend"
+            ref={ref}
+            style={{
+                transform: isInView ? 'none' : 'translatex(200px)',
+                opacity: isInView ? 1 : 0,
+                transition: 'all 0.6s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
+            }}
+        >
             <h2>Recommendations</h2>
             <Slider {...settings}>
                 {recz.map((rec, i) => (
@@ -64,7 +76,7 @@ const Recommendations = () => {
                 ))}
             </Slider>
         </section>
-    )
-}
+    );
+};
 
 export default Recommendations;

@@ -1,0 +1,82 @@
+@import 'variables';
+
+.portfolio-page {
+    padding-bottom: 60px;
+
+    &-intro {
+        margin: 80px auto 0 auto;
+    }
+
+    &-container {
+        margin-top: 60px !important;
+
+        h3 {
+            font-weight: 400;
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 32px;
+            letter-spacing: 1.1px;
+        }
+    }
+
+    .MuiGrid-root {
+        margin-top: 5px;
+    }
+
+
+    .MuiPaper-root {
+        position: relative;
+
+        div {
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $color-dark;
+            color: white;
+            z-index: 2;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0 20px;
+            transition: all 0.2s;
+            opacity: 0;
+
+            &:hover {
+                opacity: 0.85;
+            }
+
+            h2 {
+                font-family: $font-secondary;
+                font-size: 34px;
+
+                span {
+                    color: $color-purple;
+
+                }
+            }
+
+            p {
+                font-family: $font-secondary;
+                margin-top: 20px;
+                font-size: 14px;
+                line-height: 29px;
+                letter-spacing: 0.4px;
+            }
+        }
+
+        img {
+            filter: brightness(65%);
+            height: 275px;
+        }
+    }
+
+
+}
+
+.MuiBox-root {
+    color: $color-dark !important;
+}

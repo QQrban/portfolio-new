@@ -3,6 +3,8 @@
 @import 'header';
 @import 'home';
 @import 'about';
+@import 'portfolio';
+@import 'contact';
 
 html,
 body {
@@ -12,6 +14,45 @@ body {
     height: 100vh;
     color: white;
 
+}
+
+.page-header {
+    margin-top: 90px;
+    text-align: center;
+    position: relative;
+
+    h1 {
+        font-size: 54px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 900;
+        z-index: 2;
+        position: relative;
+        letter-spacing: 2px;
+
+        span {
+            color: $color-purple;
+        }
+
+    }
+
+    .title-bg {
+        position: absolute;
+        font-size: 110px;
+        top: -50%;
+        left: 50%;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        transform: translate(-50%);
+        font-weight: 900;
+        color: rgba(255, 255, 255, 0.048);
+    }
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 ::-webkit-scrollbar {

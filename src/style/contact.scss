@@ -1,0 +1,94 @@
+@import 'variables';
+
+.contact {
+
+    &-content {
+        display: flex;
+        max-width: 1300px;
+        align-items: center;
+        margin: 100px auto;
+        padding: 0 20px;
+        justify-content: space-around;
+    }
+
+    .MuiBox-root {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        width: 600px;
+    }
+
+    .MuiInputBase-input {
+        color: white;
+        border-radius: 12px;
+    }
+
+    label {
+        color: white !important;
+
+    }
+
+    label[data-shrink="true"] {
+        color: $color-purple !important;
+    }
+
+    .MuiInputBase-root {
+        border-radius: 12px;
+    }
+
+
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+        border-color: $color-purple !important;
+        border-radius: 12px !important;
+
+        &:hover {
+            outline: none !important;
+        }
+    }
+
+    .MuiButtonBase-root {
+        font-family: $font-secondary;
+        letter-spacing: 1.2px;
+        text-transform: capitalize;
+
+        &:hover {
+            background-color: darken($color-purple, 10%);
+        }
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+        h6 {
+            font-size: 17px;
+            color: $color-purple;
+        }
+
+        a {
+            color: white
+        }
+    }
+
+    &-logo {
+        color: #4f43d1;
+        background-color: $color-secondary;
+        padding: 13px;
+        border-radius: 16px;
+    }
+
+
+}
