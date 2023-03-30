@@ -6,7 +6,7 @@ import FormText from './FormText';
 const Contact = () => {
 
     return (
-        <section className="contact">
+        <section className="contact-page">
             <motion.div
                 className="home-motion"
                 initial={{ opacity: 0 }}
@@ -36,19 +36,19 @@ const Contact = () => {
                     },
                 }}
             >
-                <div className="contact-content">
+                <div className="contact-page-content">
                     <FormText />
-                    <div className="contact-info">
-                        <div className="contact-phone contact-item">
-                            <FiPhoneCall size={55} className="contact-logo" />
-                            <div className="contact-text">
+                    <div className="contact-page-info">
+                        <div className="contact-page-phone contact-page-item">
+                            <FiPhoneCall size={55} className="contact-page-logo" />
+                            <div className="contact-page-text">
                                 <h6>Phone</h6>
                                 <a href="tel:+37258444846">(+372)5844-4846</a>
                             </div>
                         </div>
-                        <div className="contact-email contact-item">
-                            <AiOutlineMail size={55} className="contact-logo" />
-                            <div className="contact-text">
+                        <div className="contact-page-email contact-page-item">
+                            <AiOutlineMail size={55} className="contact-page-logo" />
+                            <div className="contact-page-text">
                                 <h6>E-Mail</h6>
                                 <a href="mailto:kurban.ramazanovv@gmail.com">
                                     kurban.ramazanovv@gmail.com
