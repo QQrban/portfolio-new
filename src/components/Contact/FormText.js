@@ -54,7 +54,7 @@ const FormText = () => {
     };
 
     return (
-        <Box onSubmit={sendEmail} component="form" ref={form} autoComplete="off">
+        <Box className='contact-page-form' onSubmit={sendEmail} component="form" ref={form} autoComplete="off">
             <CssTextField
                 type="text"
                 id="outlined-basic"

@@ -144,6 +144,10 @@
     .portfolio-page {
         margin-bottom: 60px;
     }
+
+    .contact-page-form {
+        width: 100%;
+    }
 }
 
 @media (max-width: 680px) {
@@ -151,14 +155,11 @@
         justify-content: center;
     }
 
-    .MuiBox-root {
-        width: 500px !important;
-    }
-
     .contact-page-info {
         align-items: center;
         flex-wrap: wrap;
         justify-content: flex-start;
+        width: 60%;
     }
 }
 
@@ -185,8 +186,6 @@
         font-size: 70px !important;
         top: -20% !important;
     }
-
-
 
     .education-right-bar {
         gap: 20px !important;
@@ -237,6 +236,15 @@
 
     .portfolio-page {
 
+        .project-info {
+            h2 {
+                font-size: 20px !important;
+            }
+
+            p {
+                line-height: 18px !important;
+            }
+        }
 
         .MuiPaper-root {
             max-width: 320px !important;
@@ -245,12 +253,13 @@
         }
     }
 
-    .MuiBox-root {
-        width: 350px !important;
-    }
 }
 
 @media (max-width: 435px) {
+
+    .title-bg {
+        font-size: 45px !important;
+    }
 
     .portfolio-page-header {
         h1 {
@@ -283,7 +292,12 @@
 
     .contact-page {
         padding-bottom: 45px !important;
+
+        &-info {
+            width: 100%;
+        }
     }
+
 }
 
 @media (max-width: 390px) {
@@ -317,13 +331,43 @@
         }
     }
 
-    .MuiBox-root {
-        width: 300px !important;
-    }
+
 
     .contact-page-text {
         a {
-            font-size: 14px !important;
+            font-size: 13px !important;
+        }
+    }
+
+    .portfolio-page {
+
+        .MuiPaper-root {
+            max-width: 280px !important;
+            height: 230px !important;
+            margin: 0 auto;
+        }
+    }
+
+    .projects-container {
+        width: 350px !important;
+    }
+
+
+}
+
+@media (max-width: 345px) {
+    .portfolio-page {
+
+
+        .MuiPaper-root {
+            max-width: 240px !important;
+            height: 200px !important;
+            margin: 0 auto;
+        }
+
+        .MuiGrid-root {
+            padding-left: 10px !important;
+            width: 100% !important;
         }
     }
 }

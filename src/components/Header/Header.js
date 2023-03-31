@@ -6,6 +6,10 @@ import { GrMail } from 'react-icons/gr';
 
 const Header = () => {
 
+    const toTop = () => {
+        window.scroll(0, 0)
+    }
+
     const linkz = [
         {
             icon: AiFillHome,
@@ -34,6 +38,7 @@ const Header = () => {
             <nav>
                 {linkz.map((link) => (
                     <NavLink
+                        onClick={toTop}
                         onMouseOver={() => {
                             document.querySelector(`.${link.h3}`).classList.remove('hidden');
                         }}

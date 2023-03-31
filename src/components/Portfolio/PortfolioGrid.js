@@ -67,7 +67,7 @@ const PortfolioGrid = () => {
     };
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box className="projects-container" sx={{ flexGrow: 1 }}>
             <Grid container spacing={5}>
                 {workz.map((work, i) => (
                     <Grid className="grid-item" key={i} item lg={4} md={6} xs={12}>
@@ -89,7 +89,7 @@ const PortfolioGrid = () => {
                                         : { bgcolor: 'white' }
                                 }
                             >
-                                <div onClick={() => openProj(work.link)}>
+                                <div className='project-info' onClick={() => openProj(work.link)}>
                                     <h2>{work.work}</h2>
                                     <p>{work.descr}</p>
                                 </div>
