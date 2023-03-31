@@ -1,7 +1,7 @@
 @import 'variables';
 
 .header {
-    position: absolute;
+    position: fixed;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
