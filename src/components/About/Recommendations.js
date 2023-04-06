@@ -18,7 +18,7 @@ const Recommendations = () => {
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 15000,
     };
 
     const recz = [
@@ -43,7 +43,7 @@ const Recommendations = () => {
         {
             name: 'Rasim Mehtijev',
             who: 'Senior Frontend Developer.',
-            comment: `"He consistently demonstrates a strong work ethic, attention to detail, and a passion for developing innovative and engaging user experiences. His positive attitude and dedication to excellence are truly inspiring and make him an asset to any organization."`,
+            comment: `"As a junior developer, your performance has exceeded expectations. Your ability to quickly learn new technologies and apply them to the projects you are working on is impressive. Your attention to detail and commitment to writing clean, efficient code has not gone unnoticed. Your communication skills and willingness to collaborate with other team members have also been a valuable asset. Keep up the great work, and we look forward to seeing your continued growth and success as a developer."`,
             photo: rasim,
         },
     ];

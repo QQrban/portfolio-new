@@ -9,6 +9,7 @@ import furniture from '../../img/photos/furniture.png';
 import resto from '../../img/photos/resto.png';
 import todo from '../../img/photos/todo.png';
 import weather from '../../img/photos/weather-app.png';
+import news from '../../img/photos/news.png';
 
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
@@ -59,6 +60,14 @@ const PortfolioGrid = () => {
             photo: weather,
             link: 'https://thunderous-weather-app.netlify.app/',
             border: 1,
+        },
+        {
+            work: 'News app',
+            descr:
+                'The project is written in React 18 and Bootstrap 5. The website uses the New York Times API. The project is currently in development.',
+            photo: news,
+            link: 'https://react-news-beta.netlify.app/',
+            border: 2,
         },
     ];
 
